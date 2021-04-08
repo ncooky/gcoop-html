@@ -13,25 +13,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
 
-  <title>Hello, world!</title>
+  <title>CareCella Bio K Booster Ampoule W_ENG</title>
   <style>
     body {
       font-family: "Noto Sans", sans-serif, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     .head-bg {
-      background: url(assets/header.jpg) center center;
-      background-repeat: no-repeat;
-      background-size: 495px 691px;
-      min-height: 691px;
     }
 
-    .highlight1 {
+    .hl {
       margin: 2rem auto;
+      padding: 50px;
+      position: relative;
+    }
+
+    .hl:before,
+    .hl:after {
+      position: absolute;
+      font-size: 50px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .hl:before {
+      content: url(assets/bg-corner-left.png);
+      top: 15px;
+      left: 15px;
+    }
+
+    .hl:after {
+      content: url(assets/bg-corner-right.png);
+      bottom: 0;
+      right: 15px;
+    }
+
+    .hl-1 {
       background: url(assets/bg1.png) center center;
       background-repeat: no-repeat;
-      background-size: 426px 193px;
-      min-height: 193px;
+      background-size: cover;
+    }
+
+    .hl-2 {
+      background: url(assets/bg2.png) center center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .title {
@@ -40,6 +66,88 @@
       font-weight: 700;
       font-size: 2rem;
     }
+
+    .hl-title {
+      color: #fff;
+      text-decoration: underline;
+      line-height: 2.2;
+    }
+
+    .hl-sub {
+      color: #fff;
+      line-height: 2.2;
+    }
+
+    .point01-process {
+      font-size: 20px;
+      padding: 1rem 3rem;
+    }
+
+    .custom-card {
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
+
+    .card.custom-card {
+      border: none;
+      text-align: center;
+    }
+
+    .badge-step {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      font-size: 26px;
+      font-weight: 100;
+      background-color: #ff8086 !important;
+    }
+
+    .point01 {
+      border-bottom: 1px solid #ddd;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 280px) {
+      .head-bg {
+        background: url(assets/header.jpg) center center;
+        background-repeat: no-repeat;
+        background-size: 295px 426px;
+        min-height: 470px;
+      }
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      .head-bg {
+        background: url(assets/header.jpg) center center;
+        background-repeat: no-repeat;
+        background-size: 495px 691px;
+        min-height: 691px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .step {
+        position: relative;
+      }
+
+      .step:before {
+        position: absolute;
+        content: url(assets/steps.png);
+        bottom: 50%;
+        left: -20px;
+      }
+
+    }
+
+    /* // X-Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {}
+
+
   </style>
 </head>
 
@@ -54,9 +162,9 @@
     <section class="point01">
       <div class="row">
         <div class="col-sm text-center">
-          <div class="title">
+          <h1 class="title">
             Contains 94% Paeonia Lactiflora Callus Cultures
-          </div>
+          </h1>
           <div class="small">
             Paeonia Lactiflora Callus Cultures developed by General Bio’s
           </div>
@@ -66,7 +174,7 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="highlight1 col-8">
+        <div class="hl hl-1 col-8">
           <div class="hl-title">
             What is Paeonia Lactiflora?
           </div>
@@ -82,8 +190,118 @@
           </div>
         </div>
       </div>
+      <div class="row text-center">
+        <div class="col">
+          <div class="btn btn-danger rounded-pill point01-process">Callus Cultivation Process</div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="row">
+            <div class="col ">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">01</span>
+                  <p class="card-text">Paeonia Lactiflora Callus Callus
+                    Cultivation Uses leaves, stem,
+                    leafstalk, and root fragments</p>
+                </div>
+              </div>
+            </div>
+            <div class="col step">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">02</span>
+                  <p class="card-text">Yellow callus is formed as
+                    a result of a cut on the
+                    surface of the plant
+                    tissue expands</p>
+                </div>
+              </div>
+            </div>
+            <div class="col step">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">03</span>
+                  <p class="card-text">Callus Culture
+                    Proliferation Process</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">04</span>
+                  <p class="card-text">Callus Culture Flask
+                    Suspension Process</p>
+                </div>
+              </div>
+            </div>
+            <div class="col step">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">05</span>
+                  <p class="card-text">Callus Culture
+                    Bioreactor Process</p>
+                </div>
+              </div>
+            </div>
+            <div class="col step">
+              <div class="card custom-card" style="width: 18rem;">
+                <img src="assets/img6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <span class="badge rounded-pill bg-danger badge-step">06</span>
+                  <p class="card-text">Pilot Plant Cultivation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="point02">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h1 class="title">Nutrient Rich Formula</h1>
+          <div class="small ">Also contains Ginseng Callus Culture Extracts and
+            Ginseng Saponins to nourish the skin.</div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="hl hl-2 col-8">
+          <div class="hl-title">
+            What are Calluses?
+          </div>
+          <div class="hl-sub">
+            A callus is a formless lump of cells that can be cultivated and split-
+            proliferated under appropriate conditions by cutting a part of the plant
+            body. Plants are made up of differentiated cells, of which any can make
+            a callus. Calluses may proliferate infinitely if regularly cultivated,
+            but under the right conditions, it can regenerate the sprout, root, or
+            even a whole plant.
+            It is also known as stem cells, the tissue that forms to cover a plant
+            wound. Because the cells split actively, it contains a higher concentrat-
+            ion of biologically active substances effective for antioxidation,
+            reducing the appearance of wrinkles, and brightening skin tone.
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <div class="btn btn-danger rounded-pill point01-process"> Benefits of Callus Culture Cultivation </div>
+        </div>
+      </div>
     </section>
   </div>
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 
