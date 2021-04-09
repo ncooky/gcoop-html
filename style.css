@@ -1,0 +1,208 @@
+body {
+    font-family: "Noto Sans", sans-serif, serif, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .container {
+    max-width: 1200px !important;
+  }
+
+  .hl {
+    margin: 2rem auto;
+    padding: 50px;
+    position: relative;
+  }
+
+  .hl:before,
+  .hl:after {
+    position: absolute;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .hl:before {
+    content: url(assets/bg-corner-left.png);
+    top: 15px;
+    left: 15px;
+  }
+
+  .hl:after {
+    content: url(assets/bg-corner-right.png);
+    bottom: 0;
+    right: 15px;
+  }
+
+  .hl-1 {
+    background: url(assets/bg1.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hl-2 {
+    background: url(assets/bg2.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .hl-title {
+    color: #fff;
+    text-decoration: underline;
+    line-height: 2.2;
+  }
+
+  .hl-sub {
+    color: #fff;
+    line-height: 2.2;
+  }
+
+  .point01-process {
+    padding: 1rem 3rem;
+  }
+
+  .custom-card {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .card.custom-card {
+    border: none;
+    text-align: center;
+  }
+
+  .badge-step {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 26px;
+    font-weight: 100;
+    background-color: #ff8086 !important;
+  }
+
+  .point01, .point03 {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .benefits {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .list-benefits>li {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    list-style-image: url(assets/check.png);
+  }
+
+  .title-float {
+    padding-top: 1em;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .point3-img {
+    width: 100%;
+  }
+
+  .point3-control > h5 {
+    padding: .8em 0;
+  }
+  section {
+    padding: 4rem 0;
+  }
+
+  section>.row {
+    padding-top: 1em;
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 280px) {
+    .head-bg {
+      background: url(assets/header.jpg) center center;
+      background-repeat: no-repeat;
+      background-size: 295px 426px;
+      min-height: 470px;
+    }
+
+    .title-float {
+      font-size: 1rem;
+    }
+
+    .point01-process {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (min-width: 475px) {
+    .head-bg {
+      background: url(assets/header.jpg) center center;
+      background-repeat: no-repeat;
+      background-size: 395px 526px;
+      min-height: 570px;
+    }
+
+    .title-float {
+      font-size: 2rem;
+    }
+  }
+
+
+
+  @media (min-width: 575px) {
+    .title-float {
+      padding-top: 0;
+    }
+  }
+
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .head-bg {
+      background: url(assets/header.jpg) center center;
+      background-repeat: no-repeat;
+      background-size: 495px 691px;
+      min-height: 691px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .point01-process {
+      font-size: 20px;
+    }
+
+    .step {
+      position: relative;
+    }
+
+    .step:before {
+      position: absolute;
+      content: url(assets/steps.png);
+      bottom: 50%;
+      left: -20px;
+    }
+
+    .point3-img {
+      max-width: 480px;
+      width: 480px;
+    }
+
+    .title-float {
+      font-size: 3rem;
+      padding-top: 0;
+    }
+
+    .title-float~div.small {
+      font-size: 1.2em;
+    }
+  }
+
+  /* // X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {}
